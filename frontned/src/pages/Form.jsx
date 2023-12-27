@@ -45,7 +45,7 @@ const Form = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
+    <div className="max-w-sm mx-auto mt-12 p-3 bg-white rounded-md shadow-md">
       <form onSubmit={submitHandler}>
         <div className="mb-4">
           <label
@@ -98,7 +98,7 @@ const Form = () => {
             placeholder="Enter the company of your camera"
           />
         </div>
-        {/* Repeat the above structure for other input fields */}
+
         <div className="mb-4">
           <label
             htmlFor="cameraModel"
@@ -169,10 +169,10 @@ const Form = () => {
           />
         </div>
 
-        <div className="mb-4">
+        <div className="mb-2">
           <button
             type="submit"
-            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700"
+            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 text-sm"
           >
             Submit
           </button>

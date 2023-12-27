@@ -25,12 +25,10 @@ const userSchema = new mongoose.Schema(
     Latitude_Position: {
       type: Number,
       required: true,
-      unique: true,
     },
     Longnitude_Position: {
       type: Number,
       required: true,
-      unique: true,
     },
   },
   { timestamps: true }

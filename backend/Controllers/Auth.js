@@ -63,8 +63,8 @@ const registerHandler = async (req, res) => {
     );
     userData.token = token;
     userData.Password = undefined;
-    console.log("User registered successfully : ", userData);
     res.status(200).json(userData);
+    console.log("User registered successfully : ", userData);
   } catch (error) {
     console.error("Error during registration: ", error);
     res.status(500).send({ error: "Internal server error" });
