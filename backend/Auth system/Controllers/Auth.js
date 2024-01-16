@@ -32,7 +32,7 @@ const loginHandler = async (req, res) => {
       res.status(401).send({ error: "Invalid credentials" });
     }
   } catch (error) {
-    console.error("Eror while login" + error);
+    // console.error("Eror while login" + error);
     res.status(500).send({ error: "Internal server error" });
   }
 };
@@ -64,9 +64,9 @@ const registerHandler = async (req, res) => {
     userData.token = token;
     userData.Password = undefined;
     res.status(200).json(userData);
-    console.log("User registered successfully : ", userData);
+    // console.log("User registered successfully : ", userData);
   } catch (error) {
-    console.error("Error during registration: ", error);
+    // console.error("Error during registration: ", error);
     res.status(500).send({ error: "Internal server error" });
   }
 };
