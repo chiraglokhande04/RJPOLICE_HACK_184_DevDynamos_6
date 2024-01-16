@@ -18,6 +18,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    Rtsp_Link :{
+      type: String,
+      required: true,
+    },
     Camera_Range: {
       type: String,
       required: true,

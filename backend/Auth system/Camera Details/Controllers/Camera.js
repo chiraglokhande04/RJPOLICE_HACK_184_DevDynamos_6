@@ -42,6 +42,7 @@ const postHandler = async (req, res) => {
     Phone_Number: body.Phone_Number,
     Camera_Company: body.Camera_Company,
     Camera_Model: body.Camera_Model,
+    Rtsp_Link : body.Rtsp_Link,
     Camera_Range: body.Camera_Range,
     Latitude_Position: body.Latitude_Position,
     Longnitude_Position: body.Longnitude_Position,
