@@ -9,7 +9,7 @@ export default function AppContextProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const getProfile = async () => {
     const response = await axios.get(
-      "http://localhost:8000/api/user/camdetails"
+      "https://geolocation-backend-ruby.vercel.app//api/user/camdetails"
     );
     setProfile(response.data);
   };
