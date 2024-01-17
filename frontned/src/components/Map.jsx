@@ -7,7 +7,7 @@ const Map = () => {
   const [camera, setCamera] = useState([]);
 
   const mapData = async () => {
-    const result = await axios.get("http://localhost:8000/api/user/camdetails");
+    const result = await axios.get("https://geolocation-backend-ruby.vercel.app/api/user/camdetails");
     setCamera(result.data);
   };
   mapData();
